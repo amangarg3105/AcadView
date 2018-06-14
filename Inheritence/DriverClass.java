@@ -10,15 +10,15 @@ void change(int item) {
 //	this.arr = item * item;
 }
 	
-	public void drive() {
+	public static void drive() {
 		System.out.println("Priting with 0");
 	}
 	
-	public void drive(int n) {
+	public static void drive(int n) {
 		System.out.println("Priting with" +n);
 	}
 	
-	public void drive(int n, int j ) {
+	public static void drive(int n, int j ) {
 		
 		for(int i = 0; i < n; i++) {
 			
@@ -30,6 +30,10 @@ void change(int item) {
 	
 	
 	public static void main(String[] args) {
+		
+		if(1) {
+			
+		}
 		
 /*	Car c = new Car();
 		c.getSpeed();

@@ -20,7 +20,7 @@ public class Vehicle {
 	System.out.println("Vehicle is moving");
 	}
 	 
-	 void sayGoodBye();
+	 // void sayGoodBye();
 	
 	
 

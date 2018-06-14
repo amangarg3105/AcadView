@@ -5,12 +5,45 @@ package interfaces;
 import java.util.Scanner;
  
 public class DriverClass {
-
+	
+	interface p {
+		int i =10;
+	}
 	
 	public static void main(String[] args) {
 		MyInterfaceImplementation i = new MyInterfaceImplementation();
 		MyInterface m = new MyInterfaceImplementation();
 		
+		MyInterface inter = new MyInterface() {   // class xyz implement MyInterface
+			
+			@Override
+			public void sayHello() {
+			System.out.println("My Interface say Hello");
+				
+			}
+			
+			@Override
+			public void sayGoodBye() {
+				// TODO Auto-generated method stub
+				
+			}
+		};
+		
+		inter.sayHello();
+		
+		MyInterface2 interface2 = new MyInterface2() {
+			
+			@Override
+			public void sayHello() {
+		    System.out.println("My interface 2 say hello");
+				
+			}
+		};
+		
+		interface2.sayHello();
+		/*inter.sayHello();
+		interface2.sayHello();
+		*/
 		Scanner sc = new Scanner(System.in);
 		int [] arr = {1,2,3,4};
 	

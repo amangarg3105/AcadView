@@ -1,6 +1,6 @@
 package interfaces;
 
-public class MyInterfaceImplementation extends AbstractClass  implements MyInterface{
+public class MyInterfaceImplementation  implements MyInterface , MyInterface2{
 
 	@Override
 	public void sayGoodBye() {
@@ -9,15 +9,19 @@ public class MyInterfaceImplementation extends AbstractClass  implements MyInter
 
 	@Override
 	public void sayHello() {
-		
-		
-	}
-
-	@Override
-	void saySorry() {
 		// TODO Auto-generated method stub
 		
 	}
+
+
+
+/*	@Override
+	void saySorry() {
+		// TODO Auto-generated method stub
+		
+	}*/
+	
+	
 
           
 

@@ -2,6 +2,8 @@ package interfaces;
 
 public interface MyInterface {
 	
+	
+	
 	    final static String Hello = "hello";
 	    int i = 10;
  public default void oldFunction() {
@@ -12,6 +14,5 @@ public interface MyInterface {
 	    
 	    void sayHello();
 	  
-	    
-
+	
 }
