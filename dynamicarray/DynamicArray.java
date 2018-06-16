@@ -60,8 +60,10 @@ public class DynamicArray {
 	public void set(int index, int element) {
 
 		if (index > nextIndex) {
-			// error out
-			return;
+		  throw new ArrayIndexOutOfBoundsException("Index out of bound");
+		  
+		  //throw new UserDefined();
+			//return;
 		} else if (index == nextIndex) {
 			add(element);
 		} else {

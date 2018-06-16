@@ -31,9 +31,9 @@ void change(int item) {
 	
 	public static void main(String[] args) {
 		
-		if(1) {
-			
-		}
+//		if(1) {
+//			
+//		}
 		
 /*	Car c = new Car();
 		c.getSpeed();
