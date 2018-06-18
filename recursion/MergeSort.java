@@ -44,8 +44,7 @@ public class MergeSort {
 			arr[k] = right[j];
 			j++;
 			k++;
-		}
-		
+		}	
 	}
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
@@ -54,8 +53,5 @@ public class MergeSort {
 		for(int i : arr) {
 			System.out.print(i + " ");
 		}
-		
-
 	}
-
 }

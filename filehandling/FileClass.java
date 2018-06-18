@@ -29,10 +29,10 @@ public class FileClass {
 	
 	public static void main(String[] args) throws IOException   {
 
-    File f = new File("C:/Files");
-    f.mkdir();
-    System.out.println(f.isDirectory());
-   // File file = new File("F:/Demo.txt");
+  /*  File f = new File("C:/Files");
+    f.mkdir();*/
+   // System.out.println(f.isDirectory());
+    File f = new File("F:/Demo.txt");
   //  f.
     /*f.createNewFile();*/
     
@@ -54,25 +54,32 @@ public class FileClass {
 //    System.out.println(f.exists());
 //   // System.out.println(f.isDirectory());
 //   //  f.createNewFile();
-//    FileReader in;
-//    in = new FileReader(f);
-//	try {
-//		
-//		   int current = in.read(); // 0
-//
-//		     while(current != -1) {  // while((current = in.read()) != -1)  -1 is specifying EOF
-//		    	 System.out.print((char)current +"");
-//		    	 current = in.read();
-//		     }
-//	} catch (FileNotFoundException e) {
-//		// TODO Auto-generated catch block
-//		e.printStackTrace();
-//	}
-//	 finally {
-//		in.close();
+    FileReader in;
+    in = new FileReader(f);
+	try {
+		
+		   int current = in.read(); // 0
+		   int counter = 0;
+
+     while(current != -1) {  // while((current = in.read()) != -1)  -1 is specifying EOF
+    	 if(current == 10) {
+    		 counter++;
+    	 } 
+                /*   if(counter == 1) {
+                	   System.out.print((char)current +"");
+                   }*/
+   // System.out.print((char)current +"");
+		    	 current = in.read();
+		     }
+	} catch (FileNotFoundException e) {
+		// TODO Auto-generated catch block
+		e.printStackTrace();
+	}
+	 finally {
+	in.close();
 	}
     
-    
+	}
     
     
     
