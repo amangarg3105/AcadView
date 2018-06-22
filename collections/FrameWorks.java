@@ -4,10 +4,12 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.HashSet;
+import java.util.LinkedHashMap;
 import java.util.LinkedHashSet;
 import java.util.ListIterator;
 import java.util.Map;
 import java.util.Set;
+import java.util.TreeMap;
 import java.util.TreeSet;
 import java.util.Vector;
 
@@ -79,7 +81,7 @@ public class FrameWorks {
     	 
     	 //v.ensureCapacity(15);
     	 
-    	 v.trimToSize();
+    //	 v.trimToSize();
     	 
     	 
     	 
@@ -125,12 +127,18 @@ public class FrameWorks {
 	public static void main(String[] args) {
 
 		 HashMap<Character, Integer> map = (countFequency("aabccada"));
+		 
+		/* TreeMap tree = new TreeMap();
+		 LinkedHashMap linked = new LinkedHashMap();
+		 tree.put(1, '3');*/
 		
 	for(	Map.Entry<Character,Integer> e : map.entrySet()) {
-		
 		System.out.println(e.getKey() + " ------ >" + e.getValue());
 		System.out.println();
 	}
+	
+	
+	
 		//listFunctions();
 	//	vectorHandling();
 
