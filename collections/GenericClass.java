@@ -1,33 +1,62 @@
 package collections;
 
 import java.util.ArrayList;
+import java.util.Comparator;
 
-class Demo<X> {
-	X type;  //int type  // Integer Type
+class Demo {
+	//X type;  //int type  // Integer Type
 	
-	public Demo(X type) {
+	
+	  //Generic Print Method
+	
+	public <T>  void print (T arr[])  {
+		
+	}
+	  
+	
+	// Bounded Type Parameters
+	public <T extends Comparable<T>> void sort(T arr[]) {
+		
+		for(int i = 0; i < arr.length; i++) {
+			for(int j = 0; j < arr.length - i - 1; j++) {
+				
+				if(arr[i].compareTo(arr[j+1])  > 0) {
+					//swap
+				}
+			}
+		}
+	}
+/*	public Demo(X type) {
 		this.type = type;
 	}
 	
 	X getType() {
 		return type;
-	}
+	}*/
 	
 	
 }
 
 public class GenericClass {
-	
 	public static void main(String[] args) {
 		
-		Demo<Integer> d = new Demo<>(1);
+		Demo d = new Demo();
 		
-		System.out.println(d.getType());
+	//	System.out.println(d.getType());
+		Integer i = 10;
+		Integer j = 15;
+		
+		Integer arr[] = {5,1,4,3,2};
+	//	d.sortArray(arr);
+		d.print(arr);
+		
+		for(Integer element : arr) {
+			System.out.print(element + " ");
+		}
 		
 		
-		
-		Demo<Character> c = new Demo<>('a');
-		System.out.println(c.getType());
+		/*Demo<Character> c = new Demo<>('a');
+		System.out.println(c.getType());*/
 		/*ArrayList al = new ArrayList();
 		al.add("1");
 		al.add("2");
